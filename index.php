@@ -113,7 +113,7 @@
         <div>
             <h1>Глушков Андрей</h1>
             <p>Group: 221-362</p>
-            <p>Lab: 10 (Variant 4)</p>
+            <p>Lab: 11 (Variant 4)</p>
         </div>
         <a href="?type=table<?php echo $number != "none" ? "&number=$number" : "" ?>" <?php echo ($type == 'table') ? 'class="active"' : ''; ?>>Табличная верстка</a>
         <a href="?type=block<?php echo $number != "none" ? "&number=$number" : "" ?>" <?php echo ($type == 'block') ? 'class="active"' : ''; ?>>Блочная верстка</a>
@@ -161,7 +161,7 @@
         <p>Тип верстки:
             <?php echo $type == 'block' ? 'Блочная верстка' : 'Табличная верстка'; ?> |
             Название таблицы:
-            <?php echo $number == "all" ? 'Полная таблица' : 'Таблица на ' . $number; ?> |
+            <?php echo $number == "all" || $number == "none" ? 'Полная таблица' : 'Таблица на ' . $number; ?> |
             Дата и время:
             <?php echo date('Y-m-d H:i:s'); ?>
         </p>
